@@ -1,0 +1,59 @@
+<mobiles>
+    <mobile>
+        <name>htc Hero</name>
+        <!--运行平台, 可选值:Android iOS Macintosh Linux QNX Windows-->
+        <platform>android</platform>
+        <!--生产厂商-->
+        <producer>htc</producer>
+        <!--屏幕dpi, 比如:160, 240, 320-->
+        <screenDPI>180</screenDPI>
+    </mobile>
+    <mobile>
+        <name>三星i699</name>
+        <platform>android</platform>
+        <producer>SAMSUNG</producer>
+        <screenDPI>233</screenDPI>
+    </mobile>
+    <mobile>
+        <name>iPhone 3</name>
+        <resolution>320x480</resolution>
+        <screenDPI>163</screenDPI>
+        <producer>apple</producer>
+        <platform>iOS</platform>
+    </mobile>
+    <mobile>
+        <name>iPhone 4/4S</name>
+        <resolution>640×960</resolution>
+        <screenDPI>326</screenDPI>
+        <producer>apple</producer>
+        <platform>iOS</platform>
+    </mobile>
+    <mobile>
+        <name>iPhone 5</name>
+        <resolution>640×1136</resolution>
+        <screenDPI>326</screenDPI>
+        <producer>apple</producer>
+        <platform>iOS</platform>
+    </mobile>
+    <mobile>
+        <name>iPad 1/2</name>
+        <resolution>1024x768</resolution>
+        <screenDPI>132</screenDPI>
+        <producer>apple</producer>
+        <platform>iOS</platform>
+    </mobile>
+    <mobile>
+        <name>iPad 3/4</name>
+        <resolution>2048x1536</resolution>
+        <screenDPI>264</screenDPI>
+        <producer>apple</producer>
+        <platform>iOS</platform>
+    </mobile>
+    <mobile>
+        <name>iPad mini</name>
+        <resolution>1024x768</resolution>
+        <screenDPI>163</screenDPI>
+        <producer>apple</producer>
+        <platform>iOS</platform>
+    </mobile>
+</mobiles>

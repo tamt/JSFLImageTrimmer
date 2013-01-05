@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3d8a845-1c92-4003-a658-2abf69ce7218" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/JSFLImageTrimmer.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla/test.fla" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fla/tmp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mxp/ImageTrimmer.mxp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mxp/JSFLImageTrimmer.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/flexCompiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JSFLImageTrimmer.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mxp/ImageTrimmer.mxi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/JSFLImageTrimmer.mxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/copyright/CopyrightViewLogic.as" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jsfl/trimImage.jsfl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MobileDPISwitcher.mxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/lbynet/util/Cookie.as" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/mobiles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JSFLImageTrimmer.iml" afterPath="$PROJECT_DIR$/JSFLImageTrimmer.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
     </list>
     <ignored path="JSFLImageTrimmer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,17 +69,91 @@
       <file leaf-file-name="ImageTrimmer.mxi" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mxp/ImageTrimmer.mxi">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="107" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
+            <state line="18" column="60" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CopyrightViewLogic.as" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="44" selection-start="450" selection-end="450" vertical-scroll-proportion="0.2527646">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CopyrightViewLogic.as" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/copyright/CopyrightViewLogic.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="67" selection-start="640" selection-end="640" vertical-scroll-proportion="0.30905077">
+            <state line="22" column="46" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JSFLImageTrimmer.mxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/JSFLImageTrimmer.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="144" column="76" selection-start="4609" selection-end="4609" vertical-scroll-proportion="-7.142857">
+              <folding>
+                <marker date="1351143377562" expanded="true" signature="437:599" placeholder="{...}" />
+                <marker date="1351143377562" expanded="false" signature="656:724" placeholder="..." />
+                <marker date="1351143377562" expanded="true" signature="958:1699" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="1138:1622" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="1541:1601" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="1709:1768" placeholder="/** 供JSFL调用的接口 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="1837:1948" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="1958:2135" placeholder="/** 当JSFL获取到图片的数据时 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="2189:2606" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="2326:2596" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="2616:2697" placeholder="/** 完成加载jsfl导出的图片, 然后用as3分析它的非透明区域 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="2761:3416" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="3426:3466" placeholder="/** 裁切IDE舞台上选中的图片 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="3526:3685" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="3604:3675" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="3695:3759" placeholder="/** 点击&quot;裁切所選圖片&quot;按钮时 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="3815:3873" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="3883:3950" placeholder="/** 點擊&quot;自動裁切當前時間軸&quot;按鈕時 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="4019:4103" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="4113:4170" placeholder="/** 停止裁切圖片 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="4243:4291" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="4301:4337" placeholder="/** 停止裁切時間軸圖片 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="4382:4439" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="4449:4503" placeholder="/** 下一幀 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="4569:4619" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="4629:4683" placeholder="/** 上一幀 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="4749:4799" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="4809:4866" placeholder="/** 自動裁切圖片 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="4931:4986" placeholder="{...}" />
+                <marker date="1351143377562" expanded="true" signature="4996:5059" placeholder="/** 更改设置:对图片位置取整 ...*/" />
+                <marker date="1351143377562" expanded="true" signature="5123:5210" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MobileDPISwitcher.mxml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MobileDPISwitcher.mxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="53" selection-start="514" selection-end="514" vertical-scroll-proportion="-4.285714">
+              <folding>
+                <marker date="1357373592218" expanded="true" signature="331:562" placeholder="..." />
+                <marker date="1357373592218" expanded="true" signature="723:1220" placeholder="{...}" />
+                <marker date="1357373592218" expanded="true" signature="999:1080" placeholder="{...}" />
+                <marker date="1357373592218" expanded="true" signature="1086:1210" placeholder="{...}" />
+                <marker date="1357373592218" expanded="true" signature="1299:1396" placeholder="{...}" />
+                <marker date="1357373592218" expanded="true" signature="1453:1588" placeholder="{...}" />
+                <marker date="1357373592218" expanded="true" signature="1598:1653" placeholder="/** 选择一种 ...*/" />
+                <marker date="1357373592218" expanded="true" signature="1725:1966" placeholder="{...}" />
+                <marker date="1357373592218" expanded="true" signature="1976:2065" placeholder="/** 设置Flash IDE舞台的缩放百分比 ...*/" />
+                <marker date="1357373592218" expanded="true" signature="2133:2311" placeholder="{...}" />
+                <marker date="1357373592218" expanded="true" signature="2378:2600" placeholder="{...}" />
+                <marker date="1357373592218" expanded="true" signature="2441:2590" placeholder="{...}" />
+                <marker date="1357373592218" expanded="true" signature="2670:2737" placeholder="{...}" />
+                <marker date="1357373592218" expanded="true" signature="2809:2901" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,14 +179,19 @@
         <option value="$PROJECT_DIR$/src/copyright/CopyrightViewLogic.as" />
         <option value="$PROJECT_DIR$/src/JSFLImageTrimmer.mxml" />
         <option value="$PROJECT_DIR$/mxp/ImageTrimmer.mxi" />
+        <option value="$PROJECT_DIR$/bin/mobiles.xml" />
+        <option value="$PROJECT_DIR$/src/com/lbynet/util/Cookie.as" />
+        <option value="$PROJECT_DIR$/src/MobileDPISwitcher.mxml" />
+        <option value="$PROJECT_DIR$/src/mobiles.xml" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="80" />
+    <option name="x" value="77" />
     <option name="y" value="-4" />
-    <option name="width" value="1844" />
+    <option name="width" value="1847" />
     <option name="height" value="1088" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -155,16 +220,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -183,6 +238,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSFLImageTrimmer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSFLImageTrimmer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSFLImageTrimmer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSFLImageTrimmer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSFLImageTrimmer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSFLImageTrimmer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fla" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSFLImageTrimmer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JSFLImageTrimmer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane">
@@ -195,11 +310,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -207,16 +332,17 @@
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.1946387" />
     <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\flash\git\JSFLImageTrimmer\src" />
       <recent name="E:\flash\git\JSFLImageTrimmer\src\jsfl" />
       <recent name="E:\flash\git\JSFLImageTrimmer\jsfl" />
     </key>
   </component>
-  <component name="RunManager" selected="Flash App.ImageTrimmer">
+  <component name="RunManager" selected="Flash App.MobileDPISwitcher">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -397,9 +523,45 @@
       <ConfigurationWrapper RunnerId="FlexRunner" />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="MobileDPISwitcher" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="MobileDPISwitcher" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Generated" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browserFamily" value="FIREFOX" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="JSFLImageTrimmer" />
+      <option name="overriddenMainClass" value="MobileDPISwitcher" />
+      <option name="overriddenOutputFileName" value="MobileDPISwitcher.swf" />
+      <option name="overrideMainClass" value="true" />
+      <option name="runTrusted" value="true" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <RunnerSettings RunnerId="FlexDebugRunner" />
+      <RunnerSettings RunnerId="FlexRunner" />
+      <ConfigurationWrapper RunnerId="FlexDebugRunner" />
+      <ConfigurationWrapper RunnerId="FlexRunner" />
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Flash App.ImageTrimmer" />
       <item index="1" class="java.lang.String" itemvalue="Flash App.ImageTrimmer_sa" />
+      <item index="2" class="java.lang.String" itemvalue="Flash App.MobileDPISwitcher" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -431,29 +593,35 @@
       <created>1350626162765</created>
       <updated>1350626162765</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial build">
+      <created>1357355117468</created>
+      <updated>1357355117468</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="-4" width="1844" height="1088" extended-state="0" />
+    <frame x="77" y="-4" width="1847" height="1088" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Robotlegs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29474813" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29291844" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3329718" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32939914" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32725322" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17393737" sideWeight="0.7052519" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.173646" sideWeight="0.70708156" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Data Sources" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32986537" sideWeight="0.6709602" order="6" side_tool="false" content_ui="tabs" />
@@ -462,7 +630,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Profile" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32939914" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290461" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -516,6 +683,7 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="initial build" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -525,65 +693,120 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../flex_sdk_4.6.0.23201B/frameworks/libs/player/11.1/playerglobal.swc!/library.swf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1120" column="25" selection-start="47849" selection-end="47849" vertical-scroll-proportion="0.33279485" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/jsfl/trimImage.jsfl">
       <provider selected="true" editor-type-id="text-editor">
         <state line="96" column="41" selection-start="2493" selection-end="2493" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../flex_sdk_4.6.0.23201B/frameworks/projects/spark/src/spark/components/DataGrid.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="234" column="45" selection-start="7131" selection-end="7131" vertical-scroll-proportion="1.1077441" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../flex_sdk_4.6.0.23201B/frameworks/libs/player/11.1/playerglobal.swc!/library.swf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1532" column="23" selection-start="67835" selection-end="67835" vertical-scroll-proportion="-0.4509804" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/copyright/CopyrightViewLogic.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="46" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/lbynet/util/Cookie.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="96" column="27" selection-start="2150" selection-end="2150" vertical-scroll-proportion="0.33225808">
+          <folding>
+            <element signature="e#26#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MobileDPISwitcher.mxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="53" selection-start="514" selection-end="514" vertical-scroll-proportion="-4.285714">
+          <folding>
+            <marker date="1357373592218" expanded="true" signature="331:562" placeholder="..." />
+            <marker date="1357373592218" expanded="true" signature="723:1220" placeholder="{...}" />
+            <marker date="1357373592218" expanded="true" signature="999:1080" placeholder="{...}" />
+            <marker date="1357373592218" expanded="true" signature="1086:1210" placeholder="{...}" />
+            <marker date="1357373592218" expanded="true" signature="1299:1396" placeholder="{...}" />
+            <marker date="1357373592218" expanded="true" signature="1453:1588" placeholder="{...}" />
+            <marker date="1357373592218" expanded="true" signature="1598:1653" placeholder="/** 选择一种 ...*/" />
+            <marker date="1357373592218" expanded="true" signature="1725:1966" placeholder="{...}" />
+            <marker date="1357373592218" expanded="true" signature="1976:2065" placeholder="/** 设置Flash IDE舞台的缩放百分比 ...*/" />
+            <marker date="1357373592218" expanded="true" signature="2133:2311" placeholder="{...}" />
+            <marker date="1357373592218" expanded="true" signature="2378:2600" placeholder="{...}" />
+            <marker date="1357373592218" expanded="true" signature="2441:2590" placeholder="{...}" />
+            <marker date="1357373592218" expanded="true" signature="2670:2737" placeholder="{...}" />
+            <marker date="1357373592218" expanded="true" signature="2809:2901" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/mobiles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="75" selection-start="817" selection-end="817" vertical-scroll-proportion="0.8530806">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mobiles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="87" selection-start="502" selection-end="502" vertical-scroll-proportion="0.5371248">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/JSFLImageTrimmer.mxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="74" selection-start="5023" selection-end="5023" vertical-scroll-proportion="2.642369">
+        <state line="144" column="76" selection-start="4609" selection-end="4609" vertical-scroll-proportion="-7.142857">
           <folding>
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 供JSFL调用的接口 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 当JSFL获取到图片的数据时 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 完成加载jsfl导出的图片, 然后用as3分析它的非透明区域 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 裁切IDE舞台上选中的图片 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 点击&quot;裁切所選圖片&quot;按钮时 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 點擊&quot;自動裁切當前時間軸&quot;按鈕時 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 停止裁切圖片 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 停止裁切時間軸圖片 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 下一幀 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 上一幀 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 自動裁切圖片 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="/** 更改设置:对图片位置取整 ...*/" />
-            <marker date="1351143377562" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="437:599" placeholder="{...}" />
+            <marker date="1351143377562" expanded="false" signature="656:724" placeholder="..." />
+            <marker date="1351143377562" expanded="true" signature="958:1699" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="1138:1622" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="1541:1601" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="1709:1768" placeholder="/** 供JSFL调用的接口 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="1837:1948" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="1958:2135" placeholder="/** 当JSFL获取到图片的数据时 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="2189:2606" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="2326:2596" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="2616:2697" placeholder="/** 完成加载jsfl导出的图片, 然后用as3分析它的非透明区域 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="2761:3416" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="3426:3466" placeholder="/** 裁切IDE舞台上选中的图片 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="3526:3685" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="3604:3675" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="3695:3759" placeholder="/** 点击&quot;裁切所選圖片&quot;按钮时 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="3815:3873" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="3883:3950" placeholder="/** 點擊&quot;自動裁切當前時間軸&quot;按鈕時 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="4019:4103" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="4113:4170" placeholder="/** 停止裁切圖片 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="4243:4291" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="4301:4337" placeholder="/** 停止裁切時間軸圖片 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="4382:4439" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="4449:4503" placeholder="/** 下一幀 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="4569:4619" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="4629:4683" placeholder="/** 上一幀 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="4749:4799" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="4809:4866" placeholder="/** 自動裁切圖片 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="4931:4986" placeholder="{...}" />
+            <marker date="1351143377562" expanded="true" signature="4996:5059" placeholder="/** 更改设置:对图片位置取整 ...*/" />
+            <marker date="1351143377562" expanded="true" signature="5123:5210" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mxp/ImageTrimmer.mxi">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="107" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0">
+        <state line="18" column="60" selection-start="487" selection-end="487" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/copyright/CopyrightViewLogic.as">
+    <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="67" selection-start="640" selection-end="640" vertical-scroll-proportion="0.30905077">
+        <state line="8" column="44" selection-start="450" selection-end="450" vertical-scroll-proportion="0.2527646">
           <folding />
         </state>
       </provider>
@@ -597,7 +820,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.1946387" />
               </list>
             </option>
           </splitter-proportions>
@@ -617,11 +840,11 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>flex sdk 4.6</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.1946387" />
               </list>
             </option>
           </splitter-proportions>
@@ -629,11 +852,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>JSFLImageTrimmer|JSFLImageTrimmer</last-edited>
+          <last-edited>MobileDPISwitcher|JSFLImageTrimmer</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.1946387" />
               </list>
             </option>
           </splitter-proportions>
@@ -656,7 +879,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.1946387" />
               </list>
             </option>
           </splitter-proportions>

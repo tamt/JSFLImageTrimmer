@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+               xmlns:mx="library://ns.adobe.com/flex/mx" creationComplete="onCreateComplete(event)" width="100%"
+               height="100%" backgroundColor="#D6D6D6">
+    <fx:Script><![CDATA[
+        import adobe.utils.MMExecute;
+
+        import com.lbynet.util.Cookie;
+
+        import mx.collections.XMLListCollection;
+        import mx.controls.Alert;
+        import mx.events.FlexEvent;
+
+        import spark.events.GridSelectionEvent;
+
+        [Bindable]
+        public var ideStageDPI:Number;
+
+        private var cookie:Cookie;
+
+        private function onCreateComplete(event:FlexEvent):void {
+            var loader:URLLoader = new URLLoader()
+            loader.addEventListener(Event.COMPLETE, onXMLLoaded)
+            loader.load(new URLRequest("mobiles.xml"));
+
+            cookie = new Cookie('MobileDPISwitcher')
+            if (Cookie.contains('ideStageDPI')) {
+                ideStageDPI = parseInt(Cookie.get('ideStageDPI'))
+            } else {
+                ideStageDPI = Capabilities.screenDPI;
+                Cookie.put('ideStageDPI', ideStageDPI)
+            }
+        }
+
+        private function uncaughtErrorHandler(event:UncaughtErrorEvent):void {
+            event.preventDefault();
+            Alert.show(event.toString(), 'Error')
+        }
+
+        private function onXMLLoaded(event:Event):void {
+            var xml:XML = new XML(event.target.data);
+            this.dg.dataProvider = new XMLListCollection(xml.mobile)
+
+        }
+
+        /**
+         * 选择一种
+         * @param event
+         */
+        private function onSelectMobile(event:GridSelectionEvent):void {
+            trace("[MobileDPISwitcher.onSelectMobile]", this.dg.selectedItem.screenDPI);
+            var selectedDPI:int = parseInt(this.dg.selectedItem.screenDPI)
+            this.setIDEStageZoomFactor(ideStageDPI / selectedDPI)
+        }
+
+        /**
+         * 设置Flash IDE舞台的缩放百分比
+         * @param   factor      缩放百分比, 0-1
+         */
+        private function setIDEStageZoomFactor(factor:Number):void {
+//            trace("[MobileDPISwitcher.setIDEStageZoomFactor]", this.ideStageDPI, factor);
+            MMExecute("fl.getDocumentDOM().zoomFactor = " + factor + ";");
+        }
+
+        private function initializeHandler(event:FlexEvent):void {
+            if (event.target.loaderInfo.uncaughtErrorEvents) {
+                event.target.loaderInfo.uncaughtErrorEvents.addEventListener(UncaughtErrorEvent.UNCAUGHT_ERROR, uncaughtErrorHandler)
+            }
+        }
+
+        private function ideStageDPIChangeHandler(event:Event):void {
+            Cookie.put('ideStageDPI', this.ideStageDPI)
+        }
+
+        private function editMobileListHandler(event:MouseEvent):void {
+            MMExecute("fl.openScript(fl.configURI + '/WindowSWF/mobiles.xml')");
+        }
+        ]]></fx:Script>
+    <s:layout>
+        <s:VerticalLayout paddingLeft="5" paddingTop="5" paddingRight="5" paddingBottom="5"></s:VerticalLayout>
+    </s:layout>
+    <fx:Binding source="ideStageDPI_ns.value" destination="ideStageDPI"></fx:Binding>
+    <s:HGroup width="100%">
+        <s:HGroup width="100%" verticalAlign="middle">
+            <s:Label text="电脑屏幕DPI:"></s:Label>
+            <s:NumericStepper id="ideStageDPI_ns" value="{ideStageDPI}" maximum="999"
+                              change="ideStageDPIChangeHandler(event)"></s:NumericStepper>
+        </s:HGroup>
+        <s:Button label="编辑" click="editMobileListHandler(event)"></s:Button>
+    </s:HGroup>
+    <s:DataGrid id="dg" width="100%" height="100%" selectionChange="onSelectMobile(event)">
+        <s:columns>
+            <s:ArrayList>
+                <s:GridColumn dataField="name" headerText="Name"></s:GridColumn>
+                <s:GridColumn dataField="platform" headerText="Platform"></s:GridColumn>
+                <s:GridColumn dataField="screenDPI" headerText="DPI"></s:GridColumn>
+            </s:ArrayList>
+        </s:columns>
+    </s:DataGrid>
+
+
+</s:Application>
