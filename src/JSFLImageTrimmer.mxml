@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+               xmlns:mx="library://ns.adobe.com/flex/mx" creationComplete="onCreateComplete(event)" width="260"
+               height="120" backgroundColor="#D6D6D6">
+    <fx:Style>
+        @namespace s "library://ns.adobe.com/flex/spark";
+        @namespace mx "library://ns.adobe.com/flex/mx";
+        mx|ToolTip {
+            backgroundColor: black;
+            backgroundAlpha: 1.0;
+            cornerRadius: 0;
+            color: white;
+            fontSize: 12;
+        }
+    </fx:Style>
+    <fx:Script><![CDATA[
+        import adobe.utils.MMExecute;
+
+        import copyright.CopyrightViewLogic;
+
+        [Embed(source="jsfl/trimImage.jsfl", mimeType="application/octet-stream")]
+        private var JSFL_TrimImage_File:Class;
+        private var JSFL_TrimImage:String;
+
+        private function onCreateComplete(evt:Event):void {
+
+            var ba:ByteArray;
+            ba = new JSFL_TrimImage_File();
+            JSFL_TrimImage = ba.readUTFBytes(ba.length);
+
+            if (ExternalInterface.available) {
+                //对JSFL公布接口
+                ExternalInterface.addCallback("callSWF", this.callMeFromJSFL);
+                ExternalInterface.addCallback("onGetImageBits", this.onGetImageBits);
+                ExternalInterface.addCallback("stopTrimTimeline", this.stopTrimTimeline);
+
+                MMExecute(JSFL_TrimImage);
+
+                //JSFL模擬計時器
+                setInterval(function ():void {
+                    MMExecute("tick();")
+                }, 500);
+            }
+
+            //實現"著作權"鏈接
+            new CopyrightViewLogic(this);
+        }
+
+        /**
+         * 供JSFL调用的接口
+         * @param arg
+         */
+        function callMeFromJSFL(method:String, params:Array):String {
+//            this.tf.appendText("callMeFromJSFL: " + method + "\n");
+            return "success!"
+        }
+
+        /**
+         * 当JSFL获取到图片的数据时
+         * @param image      String或者Object, 当为String时则代表图片的路径,
+         *                  如果为Object则是jsfl.bitmapInstance.getBits()数据.
+         */
+        function onGetImageBits(image:* = null):void {
+//            this.tf.appendText("onGetImageBits: " + image + "\n");
+            if (image is String && image.indexOf("file://") >= 0) {
+                //加载jsfl导出的图片, 然后用as3分析它的非透明区域
+                var loader:Loader = new Loader();
+                loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onImageLoadComplete);
+                loader.load(new URLRequest(image as String));
+            }
+        }
+
+        /**
+         * 完成加载jsfl导出的图片, 然后用as3分析它的非透明区域
+         * @param event
+         */
+        private function onImageLoadComplete(event:Event):void {
+            var bitmap:Bitmap = (event.target as LoaderInfo).content as Bitmap;
+            var bmd:BitmapData = bitmap.bitmapData;
+
+            //显示到log
+
+            //非透明区域
+            var rect:Rectangle = bmd.getColorBoundsRect(0xff000000, 0x00000000, false);
+//            this.tf.appendText(rect.toString());
+
+            //调用jsfl,进行裁切
+            var script:String =
+                    "trim('" +
+                            rect.x + "," +
+                            rect.y + "," +
+                            rect.width + "," +
+                            rect.height +
+                            "')";
+            MMExecute(script);
+        }
+
+        /**
+         * 裁切IDE舞台上选中的图片
+         */
+        private function trimSelectedBitmapInstance():void {
+            //运行JSFL
+            if (Capabilities.playerType == "External") {
+                MMExecute("trimCurrSelectedBitmap();");
+            }
+        }
+
+        /**
+         * 点击"裁切所選圖片"按钮时
+         * @param event
+         */
+        private function onClickTrim(event:Event):void {
+            this.trimSelectedBitmapInstance();
+        }
+
+        /**
+         * 點擊"自動裁切當前時間軸"按鈕時
+         * @param event
+         */
+        private function onClickTrimTimeline(event:MouseEvent):void {
+            //自動裁切當前時間軸
+            MMExecute("trimeTimelineBitmap();");
+        }
+
+        /**
+         * 停止裁切圖片
+         * @param event
+         */
+        private function onClickStopTrimTimeline(event:MouseEvent):void {
+            this.stopTrimTimeline();
+        }
+
+        /**
+         * 停止裁切時間軸圖片
+         */
+        private function stopTrimTimeline() {
+            MMExecute("stopTrimTimeline();");
+        }
+
+        /**
+         * 下一幀
+         * @param event
+         */
+        private function onClickNextFrame(event:MouseEvent):void {
+            MMExecute("nextFrame();");
+        }
+
+        /**
+         * 上一幀
+         * @param event
+         */
+        private function onClickPrevFrame(event:MouseEvent):void {
+            MMExecute("prevFrame();");
+        }
+
+        /**
+         * 自動裁切圖片
+         * @param event
+         */
+        private function onClickAutoTrim(event:MouseEvent):void {
+            MMExecute("autoTrimBitmap();");
+        }
+
+        /**
+         * 更改设置:对图片位置取整
+         * @param event
+         */
+        private function onChangeFixPosition(event:Event):void {
+            MMExecute("setFixPosition(" + this.fixPosition.selected + ")");
+        }
+        ]]></fx:Script>
+    <s:VGroup width="260" height="100" paddingBottom="10" paddingLeft="10" paddingTop="10" paddingRight="10">
+        <!--<s:Image id="img"></s:Image>-->
+        <!--<s:TextArea id="tf" width="100%"></s:TextArea>-->
+        <s:Button id="trim_btn" click="onClickTrim(event)" label="裁切所選圖片" toolTip="對選中的圖片進行'裁切非透明像素'區域"/>
+        <s:HGroup>
+            <s:Button id="auto_trim_btn" click="onClickAutoTrim(event)" label="自動裁切圖片" toolTip="對當前幀的圖片進行'裁切非透明像素'區域"/>
+            <s:Button id="nextFrame_btn" click="onClickNextFrame(event)" label="下一幀"/>
+            <s:Button id="prevFrame_btn" click="onClickPrevFrame(event)" label="上一幀"/>
+        </s:HGroup>
+        <s:HGroup>
+            <s:Button id="trim_timeline_btn" click="onClickTrimTimeline(event)" label="自動裁切時間軸"
+                      toolTip="時間軸的第一幀進行'裁切非透明像素'區域"/>
+            <s:Button id="stop_trim_timeline_btn" click="onClickStopTrimTimeline(event)" label="停止"/>
+        </s:HGroup>
+        <s:CheckBox id="fixPosition" toolTip="对图片位置取整" label="图片位置取整" change="onChangeFixPosition(event)"></s:CheckBox>
+    </s:VGroup>
+</s:Application>

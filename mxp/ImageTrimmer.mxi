@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<macromedia-extension
+        name="Image Trimmer"
+        version="0.9.0"
+        type="command">
+    <author name="http://www.weibo.com/tamt"/>
+    <products>
+        <product name="Flash" version="11" primary="true"/>
+    </products>
+    <description>
+        <![CDATA[
+            在Flash IDE舞台上直接对图片进行透明像素的裁切.
+        ]]>
+    </description>
+    <ui-access>
+        <![CDATA[
+            窗口 > 其他面板 > JSFLImageTrimmer
+        ]]>
+    </ui-access>
+    <license-agreement>
+        <![CDATA[
+                ]]>
+    </license-agreement>
+    <files>
+        <file source="JSFLImageTrimmer.swf" destination="$flash/WindowSWF"/>
+    </files>
+</macromedia-extension>
