@@ -1,9 +1,20 @@
-Mobile DPI Switcher的目的是让美工直观的看到Flash舞台上的图形在手机屏幕表现是怎么样的.
+JSFL Immage Trimmer
+    目的:
+        在Flash IDE舞台上对图片的透明区域进行裁切.
+    使用:
+        1.把JSFLImageTrimmer.swf这个文件复制到flash cs的配置路径下, 形如:
+            C:\Documents and Settings\Administrator\Local Settings\Application Data\Adobe\Flash CS5.5\zh_CN\Configuration\WindowSWF
+        2.打开Flash CS, 窗口-其它面板-JSFLImageTrimmer.
 
-MobileDPISwitcher使用步骤:
-1.把MobileDPISwitcher.swf和mobiles.xml两个文件复制到flash cs的配置路径下, 例如:
-    C:\Documents and Settings\Administrator\Local Settings\Application Data\Adobe\Flash CS5.5\zh_CN\Configuration\WindowSWF
-2.打开Flash CS, 窗口-其它面板-MobileDPISwitcher.
-3.根据电脑的实际信息和分辨率, 正确设置面板上的"设置电脑屏幕DPI".
-    AS3并不能获取到屏幕实际的DPI值, 在PC上, Capabilities.screenDPI的值总是为72. 所以这个值需要手动设置.
-4.如果要修改手机列表, 请编辑mobiles.xml文件.
+=============================================================
+
+Mobile DPI Switcher
+    目的:
+        让美工直观的看到Flash舞台上的图形在手机屏幕表现是怎么样的.
+    使用:
+        1.把MobileDPISwitcher.swf和mobiles.xml两个文件复制到flash cs的配置路径下, 形如:
+            C:\Documents and Settings\Administrator\Local Settings\Application Data\Adobe\Flash CS5.5\zh_CN\Configuration\WindowSWF
+        2.打开Flash CS, 窗口-其它面板-MobileDPISwitcher.
+        3.根据电脑的实际信息和分辨率, 正确设置面板上的"设置电脑屏幕DPI".
+            AS3并不能获取到屏幕实际的DPI值, 在PC上, Capabilities.screenDPI的值总是为72. 所以这个值需要手动设置.
+        4.如果要修改手机列表, 请编辑mobiles.xml文件.
