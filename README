@@ -1,4 +1,5 @@
 JSFL Immage Trimmer
+===================
     目的:
         在Flash IDE舞台上对图片的透明区域进行裁切.
     使用:
@@ -6,9 +7,9 @@ JSFL Immage Trimmer
             C:\Documents and Settings\Administrator\Local Settings\Application Data\Adobe\Flash CS5.5\zh_CN\Configuration\WindowSWF
         2.打开Flash CS, 窗口-其它面板-JSFLImageTrimmer.
 
-=============================================================
 
 Mobile DPI Switcher
+===================
     目的:
         让美工直观的看到Flash舞台上的图形在手机屏幕表现是怎么样的.
     使用:
